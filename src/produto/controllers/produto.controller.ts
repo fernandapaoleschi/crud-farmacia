@@ -10,10 +10,13 @@ import {
   Post,
   Put
 } from '@nestjs/common';
+
+import { ApiTags } from '@nestjs/swagger';
+
 import { Produto } from '../../produto/entities/produto.entity';
 import { ProdutoService } from '../../produto/services/produto.service';
 
-
+@ApiTags('Produto')
 @Controller('/produto')
 export class ProdutoController {
 
